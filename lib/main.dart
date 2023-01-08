@@ -48,7 +48,6 @@ class _RandomWordsState extends State<RandomWords> {
           if (index >= _suggetions.length)
           {
             _suggetions.addAll(generateWordPairs().take(10));
-            print('hello');
           }
           return _build_Row(_suggetions[index]);
         }
